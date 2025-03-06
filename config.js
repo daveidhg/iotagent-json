@@ -175,7 +175,7 @@ config.iota = {
      * When this flag is active, the IoTAgent will add the TimeInstant attribute to every entity created, as well
      * as a TimeInstant metadata to each attribute, with the current timestamp.
      */
-    timestamp: true,
+    timestamp: false,
     /**
      * Context Broker configuration. Defines the connection information to the instance of the Context Broker where
      * the IoT Agent will send the device data.
@@ -184,11 +184,20 @@ config.iota = {
         /**
          * Host where the Context Broker is located.
          */
-        host: 'localhost',
+        host: 'scorpio-provider.127.0.0.1.nip.io',
         /**
          * Port where the Context Broker is listening.
          */
-        port: '1026'
+        port: '8080',
+
+        type: 'scorpio',
+
+        ngsiVersion: 'ld',
+
+        jsonLdContext: {
+            id: '@id',
+            type: '@type'
+        }
     },
     /**
      * Configuration of the North Port of the IoT Agent.
@@ -197,7 +206,9 @@ config.iota = {
         /**
          * Port where the IoT Agent will be listening for NGSI and Provisioning requests.
          */
-        port: 4041
+        port: 4041,
+
+        ngsiVerseion: 'ld'
     },
 
     /**
@@ -319,7 +330,7 @@ config.iota = {
 
 /**
  * map {name: function} of extra transformations avaliable at JEXL plugin
-*  see https://github.com/telefonicaid/iotagent-node-lib/tree/master/doc/expressionLanguage.md#available-functions
+ *  see https://github.com/telefonicaid/iotagent-node-lib/tree/master/doc/expressionLanguage.md#available-functions
  */
 
 config.jexlTransformations = {};
