@@ -1,4 +1,14 @@
-/node_modules/
+node_modules/*
+!node_modules/iotagent-node-lib/
+
+node_modules/iotagent-node-lib/*
+!node_modules/iotagent-node-lib/lib/
+
+node_modules/iotagent-node-lib/lib/*
+!node_modules/iotagent-node-lib/lib/services/
+node_modules/iotagent-node-lib/lib/services/*
+!node_modules/iotagent-node-lib/lib/services/ngsi/
+
 /.idea/
 /doc/
 /coverage/
