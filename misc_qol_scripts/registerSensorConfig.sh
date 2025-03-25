@@ -1,4 +1,4 @@
-curl -X POST -H "Fiware-Service: myProductionline" -H "Fiware-ServicePath: /environment" -H "Content-Type: application/json" -H "Cache-Control: no-cache" -d '{
+curl -X POST -H "Fiware-Service: myproductionline" -H "Fiware-ServicePath: /environment" -H "Content-Type: application/json" -H "Cache-Control: no-cache" -d '{
     "services": [
       {
           "resource": "/iot/json",
