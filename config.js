@@ -190,13 +190,11 @@ config.iota = {
          */
         port: '8080',
 
-        type: 'scorpio',
-
         authentication: 'auto',
 
         // Local testing environment, not critical information
         access_token:
-            'eyJhbGciOiJSUzI1NiIsImtpZCI6InVBeUxacVU1blZZT203MGJoVF9SaUozbjk1dkZNdS1jLXhoM2MtNG81c00iLCJ0eXAiOiJKV1QifQ.eyJhdWQiOlsiZGF0YS1zZXJ2aWNlIl0sImNsaWVudF9pZCI6IiR7RElEfSIsImV4cCI6MTc0MjkxMjMyNCwiaXNzIjoiJHtESUR9Iiwia2lkIjoidUF5TFpxVTVuVllPbTcwYmhUX1JpSjNuOTV2Rk11LWMteGgzYy00bzVzTSIsInN1YiI6IiIsInZlcmlmaWFibGVDcmVkZW50aWFsIjp7IkBjb250ZXh0IjpbImh0dHBzOi8vd3d3LnczLm9yZy8yMDE4L2NyZWRlbnRpYWxzL3YxIiwiaHR0cHM6Ly93d3cudzMub3JnL25zL2NyZWRlbnRpYWxzL3YxIl0sImNyZWRlbnRpYWxTdWJqZWN0Ijp7ImVtYWlsIjoidGVzdEB1c2VyLm9yZyIsImZpcnN0TmFtZSI6IlRlc3QiLCJsYXN0TmFtZSI6IlJlYWRlciJ9LCJpZCI6InVybjp1dWlkOjA0ZGIzMDlkLTkxOWMtNDIyYS1iYmI2LWM3MDAwZGEzMjY3MSIsImlzc3VhbmNlRGF0ZSI6IjIwMjUtMDMtMjVUMTM6NDg6MzlaIiwiaXNzdWVyIjoiZGlkOmtleTp6RG5hZVRZUTJDWkVmd1Zleml1QnJ3WjN2RktDeVVkU0ZVTHZrRnZaRDY3QUNuQnkzIiwidHlwZSI6WyJVc2VyQ3JlZGVudGlhbCJdfX0.b9HnnissXessy5ny3rKLdWv4LUdjkYnYIEkx2xm8aesnqKwon5V6s9Mhivu1C5f2gR2HKfliBkUmjAfcRb_GDj_YOfVsuD7k8Zxhi8UxvXWoQx_ngdISRcZShJJ2mbDkVOHjqXRQpXWrwMuxPnYU03yUhEOODN3UpGLw5JJj-PeDfs7kBqf1mJJUYlStanH-nLmuCbVHUgnJnG1Z3PhP1WnvBir5r652_NC2lQy8JHzR0abd2kv2Rg70T1XSawjKyDKAq1dAOXLw6Qz895ObkLjIFLV2gnagU0xa_kTUdNmWf6Atx2lHqPIgQ0bYcVJl9VdwPqbIsHxsqqTtLwWUwA',
+            'eyJhbGciOiJSUzI1NiIsImtpZCI6InVBeUxacVU1blZZT203MGJoVF9SaUozbjk1dkZNdS1jLXhoM2MtNG81c00iLCJ0eXAiOiJKV1QifQ.eyJhdWQiOlsiZGF0YS1zZXJ2aWNlIl0sImNsaWVudF9pZCI6IiR7RElEfSIsImV4cCI6MTc0NDExNDYwNCwiaXNzIjoiJHtESUR9Iiwia2lkIjoidUF5TFpxVTVuVllPbTcwYmhUX1JpSjNuOTV2Rk11LWMteGgzYy00bzVzTSIsInN1YiI6IiIsInZlcmlmaWFibGVDcmVkZW50aWFsIjp7IkBjb250ZXh0IjpbImh0dHBzOi8vd3d3LnczLm9yZy8yMDE4L2NyZWRlbnRpYWxzL3YxIiwiaHR0cHM6Ly93d3cudzMub3JnL25zL2NyZWRlbnRpYWxzL3YxIl0sImNyZWRlbnRpYWxTdWJqZWN0Ijp7ImVtYWlsIjoidGVzdEB1c2VyLm9yZyIsImZpcnN0TmFtZSI6IlRlc3QiLCJsYXN0TmFtZSI6IlJlYWRlciJ9LCJpZCI6InVybjp1dWlkOjA0ZGIzMDlkLTkxOWMtNDIyYS1iYmI2LWM3MDAwZGEzMjY3MSIsImlzc3VhbmNlRGF0ZSI6IjIwMjUtMDMtMjVUMTM6NDg6MzlaIiwiaXNzdWVyIjoiZGlkOmtleTp6RG5hZVRZUTJDWkVmd1Zleml1QnJ3WjN2RktDeVVkU0ZVTHZrRnZaRDY3QUNuQnkzIiwidHlwZSI6WyJVc2VyQ3JlZGVudGlhbCJdfX0.Z2vK5Ff19kTnW5zoJt3o76LnrTKmnf9kyWKu-HgkeCHhu9Y5qnh-4Ui8Dl4tmlSt62QIzW0NVXQJRKSwyP3cUjcSMSWvq7nJhrqgBg-1kWUA50riLcXGzFL0rSKm24xVWdc2hou74vRVoXKnKtxH4kjwq428twxK5FB9AuHoDK95pOnRT8Ho9ar6V7ZjJxtka_5iY9H5HABP36zzIH9MxyA2dbhb1xEw_X0_dVfe_gCVdlxE4GOqAuKG9vtzaN6HwTpp7U2qE6jElD83DhRAB5JM4YkiN-oeFTT_-VXPwnbodQC_M07FOzA_54qN3Do2zbJ6KgxanqUz-L6oiUgAIA',
 
         VP_token:
             'ZXlKaGJHY2lPaUpGVXpJMU5pSXNJQ0owZVhBaU9pSktWMVFpTENBaWEybGtJam9pWkdsa09tdGxlVHA2Ukc1aFpYVnJZV1J6UVZCTVpFZFVTME5HU201TmFsWTVORkZTVVRRM1ZEWjVOVUk0WkVSTGNVSmtTRmR4WWs1TkluMC5leUpwYzNNaU9pQWlaR2xrT210bGVUcDZSRzVoWlhWcllXUnpRVkJNWkVkVVMwTkdTbTVOYWxZNU5GRlNVVFEzVkRaNU5VSTRaRVJMY1VKa1NGZHhZazVOSWl3Z0luTjFZaUk2SUNKa2FXUTZhMlY1T25wRWJtRmxkV3RoWkhOQlVFeGtSMVJMUTBaS2JrMXFWamswVVZKUk5EZFVObmsxUWpoa1JFdHhRbVJJVjNGaVRrMGlMQ0FpZG5BaU9pQjdDaUFnSUNBaVFHTnZiblJsZUhRaU9pQmJJbWgwZEhCek9pOHZkM2QzTG5jekxtOXlaeTh5TURFNEwyTnlaV1JsYm5ScFlXeHpMM1l4SWwwc0NpQWdJQ0FpZEhsd1pTSTZJRnNpVm1WeWFXWnBZV0pzWlZCeVpYTmxiblJoZEdsdmJpSmRMQW9nSUNBZ0luWmxjbWxtYVdGaWJHVkRjbVZrWlc1MGFXRnNJam9nV3dvZ0lDQWdJQ0FnSUNKbGVVcG9Za2RqYVU5cFNrWlZla2t4VG1sSmMwbHVValZqUTBsblQybEJhVk5zWkZWSmFYZHBZVEpzYTBscFFUWkpRMHByWVZkUk5tRXlWalZQYm5CRlltMUdiRlpHYkZKTmEwNWhVbGRhTTFadFZqWmhXRlpEWTI1a1lVMHpXa2RUTUU0MVZsZFNWRkpzVmsxa2JYUkhaR3h3UlU1cVpFSlJNalZEWlZSTmFXWlJMbVY1U25WWmJWbHBUMnBGTTA1RVNUVk5WRUV4VFZScmMwbHRjREJoVTBrMlNXNVdlV0pxY0RGa1YyeHJUMnBCTUZwSFNYcE5SR3hyVEZScmVFOVhUWFJPUkVsNVdWTXhhVmx0U1RKTVYwMHpUVVJCZDFwSFJYcE5hbGt6VFZOSmMwbHRiSHBqZVVrMlNXMVNjRnBFY0hKYVdHczJaV3RTZFZsWFZsVlhWa1Y1VVRGd1JscHVaRmRhV0hCd1pGVktlV1F4YjNwa2ExcE1VVE5zVmxwR1RrZFdWWGd5WVRCYU1sZHJVVEpPTUVaRVltdEtOVTE1U1hOSmJscHFTV3B3TjBsdVVqVmpSMVZwVDJ4emFWWllUbXhqYTA1NVdsZFNiR0p1VW5CWlYzZHBXRk4zYVdGWVRucGtWMVo1U1dwdmFWcEhiR3RQYlhSc1pWUndObEpITldoYVZsSmFWVlJLUkZkclZtMWtNVnBzWlcxc01WRnVTak5YYWs0eVVtdDBSR1ZXVm10Vk1GcFdWRWhhY2xKdVdtRlNSRmt6VVZWT2RWRnVhM3BKYVhkcFlWaE9lbVJYUm5WWk1sWkZXVmhTYkVscWIzaE9lbEY1VDFSRmQwNVVSVFZNYWtFMFQwUkJkMDFFUVhkTlEzZHBXVE5LYkZwSFZuVmtSMnhvWWtaT01WbHRjR3haTTFGcFQyNXphVnB0Ykhsak0xSlBXVmN4YkVscWIybFdSMVo2WkVOSmMwbHRlR2hqTTFKUFdWY3hiRWxxYjJsVmJWWm9Xa2RXZVVscGQybGFWekZvWVZkM2FVOXBTakJhV0U0d1VVaFdlbHBZU1hWaU0wcHVTVzR3YzBsclFtcGlNalV3V2xob01FbHFjR0pKYldnd1pFaENlazlwT0haa00yUXpURzVqZWt4dE9YbGFlVGg1VFVSRk5Fd3lUbmxhVjFKc1ltNVNjRmxYZUhwTU0xbDRTV2wzYVdGSVVqQmpTRTAyVEhrNU0yUXpZM1ZrZWsxMVlqTktia3d5TlhwTU1rNTVXbGRTYkdKdVVuQlpWM2g2VEROWmVFbHNNVGxtVVM1V01ERXdjMnBUZW1oS1QzbDBMVzl4UlVkT1NEWklSbWRDYVhSQ2JrNWFVVFp5TmpGaU5GOVVaMVJJWHpaVU0zRk9ja3B0ZFdKVmNWcDRaRmRtWlU1MUxYSXRjV1J3ZUdwWWJTMU9Ra0Z0T0MwNE4wbFFaeUlLSUNBZ0lGMHNDaUFnSUNBaWFHOXNaR1Z5SWpvZ0ltUnBaRHByWlhrNmVrUnVZV1YxYTJGa2MwRlFUR1JIVkV0RFJrcHVUV3BXT1RSUlVsRTBOMVEyZVRWQ09HUkVTM0ZDWkVoWGNXSk9UU0lLSUNCOWZRLk1FUUNJQmFianBCSzU2MkJCWm14UVhfdkY1Nk1Fc0U3WU1WM0oyYXE4WmtYUjJKTkFpQWdyemdtMW8tNWFtZkRJSndLWkpFNXduWlFRUzNEUUZ5QmpaMDI1RzV3elE',
@@ -209,7 +207,51 @@ config.iota = {
 
         jsonLdContext: {
             id: '@id',
-            type: '@type'
+            type: '@type',
+            'Air Quality': {
+                '@id': 'https://saref.etsi.org/core/AirQuality',
+                '@type': 'Property'
+            },
+            'Gas Resistance': {
+                '@id': 'https://w3id.org/sosa/GasResistance',
+                '@type': 'Property',
+                unit: 'ohms'
+            },
+            Humidity: {
+                '@id': 'https://saref.etsi.org/core/Humidity',
+                '@type': 'Property',
+                unit: 'r.H.'
+            },
+            'Index for Air Quality': {
+                '@id': 'https://w3id.org/sosa/IndexForAirQuality',
+                '@type': 'Property',
+                unit: 'calculated index'
+            },
+            Pressure: {
+                '@id': 'https://saref.etsi.org/core/Pressure',
+                '@type': 'Property',
+                unit: 'hPa'
+            },
+            'Raw Temperature': {
+                '@id': 'https://saref.etsi.org/core/Temperature',
+                '@type': 'Property',
+                unit: 'Celsius'
+            },
+            'Relative Humidity': {
+                '@id': 'https://saref.etsi.org/core/Humidity',
+                '@type': 'Property',
+                unit: 'r.H.'
+            },
+            Temperature: {
+                '@id': 'https://saref.etsi.org/core/Temperature',
+                '@type': 'Property',
+                unit: 'Celsius'
+            },
+            Timestamp: {
+                '@id': 'https://schema.org/DateTime',
+                '@type': 'Property',
+                format: 'ISO 8601'
+            }
         }
     },
     /**
