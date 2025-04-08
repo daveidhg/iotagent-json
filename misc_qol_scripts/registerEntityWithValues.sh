@@ -1,4 +1,4 @@
-curl http://scorpio-provider.127.0.0.1.nip.io:8080/ngsi-ld/v1/entities -H 'Accept: application/json' -H 'Content-Type: application/ld+json' \
+curl http://scorpio-provider.127.0.0.1.nip.io:8080/ngsi-ld/v1/entities -H 'Accept: application/json' -H 'Content-Type: application/json' \
 -d '{"id": "urn:ngsi-ld:multiSensor:bme680",
         "type": "multiSensor",
         "Air Quality": {
@@ -63,6 +63,5 @@ curl http://scorpio-provider.127.0.0.1.nip.io:8080/ngsi-ld/v1/entities -H 'Accep
                 "@type": "ISO 8601",
                 "@value": "2023-06-08T11:40:10.030Z"
             }
-        },
-        "@context": [ "https://pastebin.com/raw/Mgxv2ykn" ]
+        }
     }'
